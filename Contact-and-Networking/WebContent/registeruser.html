@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register Form</title>
+
+<script>
+	function validatepass() {
+
+		var pass = document.getElementById("password").value;
+		var cpass = document.getElementById("cpassword").value;
+
+		if (pass == cpass) {
+			document.getElementById("errpass").innerHTML = "";
+			return true;
+		} else {
+			document.getElementById("errpass").innerHTML = "password and confirm password does not match";
+			return false;
+		}
+	}
+</script>
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+	background-size: cover;
+	font-family: sans-serif;
+	background-attachment: scroll;
+}
+
+.loginBox {
+	margin-top: 20px width;
+	height: 900px;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 80px;
+	border-radius: 10px;
+	overflow: scroll;
+	height: 900px;
+}
+
+#user {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/ 2);
+	left: calc(50% - 50px);
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+}
+
+.loginBox p {
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.loginBox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginBox input[type="text"], .loginBox input[type="password"],
+	.loginBox input[type="email"], .loginBox input[type="date"] {
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 25px;
+	color: white;
+	font-size: 15px;
+}
+
+::placeholder {
+	color: rgba(255, 240, 255, 0.5);
+}
+
+.loginBox input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+	background: #FF0000;;
+	cursor: pointer;
+	border-radius: 10px;
+}
+</style>
+
+</head>
+<body
+	background="https://www.athletadesk.com/wp-content/uploads/2016/08/join-background.jpg">
+	<div class="loginBox" action="register" method="post"
+		onsubmit="return validatepass()">
+		<img src="css/manager.png" id="user">
+		<h2>Registeration Form</h2>
+		<br> <input type="text" class="login-username" name="fullname"
+			id="name" autofocus required placeholder="FullName" /> <input
+			type="email" class="login-username" name="email" id="mail" autofocus
+			required placeholder="Email" /> <input type="text"
+			class="login-username" name="mob" id="mobile" autofocus
+			pattern="[0-9]{10}" required placeholder="Phone No" /> <label
+			class="text-headr">Gender</label>&nbsp;&nbsp;&nbsp;<input
+			type="radio" name="gender" id="m" value="male"> <label
+			class="text-headr">Male</label>&nbsp;&nbsp; <input type="radio"
+			class="form-check-input" name="gender" id="f" value="female">
+		<label class="text-headr">Female</label><br> <br> <input
+			type="text" class="login-username" name="pass" id="password"
+			autofocus required placeholder="Password" /> <input type="text"
+			class="login-username" name="cpass" id="cpassword" autofocus required
+			placeholder="Confirm Password" />
+		<p class="text-headr" id="errpass"></p>
+		<br> <br> <input type="date" class="login-username"
+			name="dob" id="date" min="1890-01-05" max="2005-12-31"
+			value="2020-09-25" autofocus required placeholder="Date Of Birth" />
+		<textarea class="login-username" name="address" id="add" rows="4"
+			cols="50" autofocus required placeholder="Address"></textarea>
+		<input type="text" class="login-username" name="city" id="cty"
+			autofocus required placeholder="City" /> <input type="text"
+			class="login-username" name="state" id="ste" autofocus required
+			placeholder="State" /> <input type="text" class="login-username"
+			name="country" id="cntry" autofocus required placeholder="Country" />
+		<input type="text" class="login-username" name="company" id="cmpy"
+			autofocus required placeholder="Company" /> <input type="file"
+			class="login-username" name="img" id="image" accept="image/*"
+			autofocus required placeholder="Image"> <input type="text"
+			class="login-username" name="SupportQ" id="SupportQn" autofocus
+			required placeholder="Support Question" /> <input type="text"
+			class="login-username" name="SupportA" id="SupportAn" autofocus
+			required placeholder="Support Answer" /> <input type="submit"
+			name="registerbutton" type="submit" value="Register" />
+		</form>
+	</div>
+</body>
+</head>

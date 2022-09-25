@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/front.css"> 
+<style type="text/css">
+body
+{
+margin:0px;
+padding:0px;
+background-size:cover;
+font-family:sans-serif;
+background-attachment:scroll;
+}
+.loginBox
+{
+width:350px;
+height:450px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+background:rgba(0,0,0,0.9);
+padding:80px 40px;
+border-radius:10px;
+}
+#user
+{
+width:100px;
+height:100px;
+border-radius:50px;
+overflow:hidden;
+position:absolute;
+top:calc(-100px/2);
+left:calc(50% - 50px);
+}
+h2
+{
+margin:0px;
+padding:0px;
+color:white;
+text-align:center;
+}
+.loginBox p
+{
+margin:0px;
+padding:0px;
+color:white;
+text-align:center;
+font-weight:bold;
+}
+.loginBox input
+{
+width:100%;
+margin-bottom:20px;
+}
+.loginBox input[type="text"],.loginBox input[type="password"]
+{
+border:none;
+border-bottom:1px solid white;
+background:transparent;
+outline:none;
+height:40px;
+color:white;
+font-size:16px;
+}
+::placeholder
+{
+color:rgba(255,255,255,0.5);
+}
+.loginBox input[type="submit"]
+{
+border:none;
+outline:none;
+height:40px;
+color:white;
+font-size:16px;
+background:#ff0000;
+cursor:pointer;
+border-radius:20px;
+}
+.loginBox a
+{
+color:white;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+}
+</style>
+</head>
+<body background="https://static.vecteezy.com/system/resources/previews/004/941/847/non_2x/cosmetic-background-for-product-branding-and-packaging-presentation-geometry-form-circle-molding-on-podium-stage-with-shadow-of-leaf-background-design-eps10-vector.jpg">
+<div class="loginBox">
+<img src="css/manager.png" id="user">
+<h2>Login Here</h2>
+<form class="login-form" action="login" method="post">
+  <input type="text" class="login-username" name="uname" autofocus required placeholder="Username" />
+  <input type="password" class="login-password" name="pass" required required placeholder="Password" />
+  <input type="submit" name="login" value="Login" class="login-submit" />
+  <a href="registeruser.html">Register</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="/MyTesting/forgetpassword.jsp">Forgot Password</a></form>
+</div>
+  
+</body>
+</html>

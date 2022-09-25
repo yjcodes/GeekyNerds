@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Autour One'
+	rel='stylesheet'>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/front.css">
+<title>Add New Contact</title>
+</head>
+<body
+	background="https://i.pinimg.com/736x/85/04/30/850430a750fb80c1ebaa5e740fc7cbd6.jpg">
+	<div class="container">
+		<form action="entercontactdata" method="post">
+			<table>
+				<div class="form-group">
+					<tr>
+						<td style="color: white">Full Name: &nbsp &nbsp &nbsp &nbsp</td>
+						&nbsp;
+						<td><input class="form-control" type="text" name="name"
+							placeholder="Enter full name" required autofocus></td>
+					</tr>
+				</div>
+				<div class="form-group">
+					<tr>
+						<td style="color: white">Email: &nbsp &nbsp</td>
+						<td><input class="form-control" type="text" name="email"
+							placeholder="Enter email id" required></td>
+					</tr>
+				</div>
+				<div class="form-group">
+					<tr>
+						<td style="padding: 30px"><button class="btn btn-dark btn-sm"
+								type="submit" name="btn" value="Submit">Submit</button></td>
+						<td>
+							<button class="btn btn-dark btn-sm" type="reset" name="btn"
+								value="Cancel">Cancel</button>
+						</td>
+					</tr>
+				</div>
+			</table>
+		</form>
+		<br /> <br />
+		<form action="viewcontact" method="get">
+			<button class="btn btn-primary btn-sm" type="submit" name="btn"
+				style="align-content: center">View Contact</button>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
