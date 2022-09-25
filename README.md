@@ -1,5 +1,5 @@
 # CodeFury
-Contacts and Networking Application (Whole end-to-end program)
+Contacts and Networking Application
 
 Through the project we are trying to connect people. This is a web based application which allow users to add and manage contacts. The application supports unlimited users and provides several features for socializing.
 ## Steps for the evaluators to run the project
